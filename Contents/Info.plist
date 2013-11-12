@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleGetInfoString</key>
-	<string>1.2 copyright 2007-2010, Tetsuro KURITA</string>
+	<string>1.2.1 copyright 2007-2013, Tetsuro KURITA</string>
 	<key>CFBundleHelpBookFolder</key>
 	<string>GUIScriptingCheckerHelp</string>
 	<key>CFBundleHelpBookName</key>
@@ -11,25 +11,25 @@
 	<key>CFBundleIdentifier</key>
 	<string>Scriptfactory.GUIScriptingChecker</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2</string>
+	<string>1.2.1</string>
 	<key>CFBundleVersion</key>
-	<string>1.2</string>
+	<string>1.2.1</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>copyright 2007-2010, Tetsuro KURITA</string>
+	<string>copyright 2007-2013, Tetsuro KURITA</string>
 	<key>WindowState</key>
 	<dict>
 		<key>dividerCollapsed</key>
-		<true/>
+		<false/>
 		<key>eventLogLevel</key>
-		<integer>2</integer>
+		<integer>-1</integer>
 		<key>name</key>
 		<string>ScriptWindowState</string>
 		<key>positionOfDivider</key>
 		<real>455</real>
 		<key>savedFrame</key>
-		<string>144 182 749 696 0 0 1440 878 </string>
+		<string>92 182 749 696 0 0 1440 878 </string>
 		<key>selectedTabView</key>
-		<string>description</string>
+		<string>result</string>
 	</dict>
 </dict>
 </plist>
