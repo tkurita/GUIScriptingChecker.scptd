@@ -9,6 +9,7 @@
       <meta name="keywords" content="GUIScriptingChecker, AppleScript, GUI Scripting" />
       <meta http-equiv="content-type" content="text/html;charset=utf-8" />
       <title>Synopsis</title>
+       <meta name="description" content="GUIScriptingChecker is an AppleScript module to check availability of &quot;GUI Scripting&quot;." />
       <!-- #BeginHeadLocked "" -->
         <link href="assets/helpbook-default.css" type="text/css" rel="stylesheet" media="all" />
         <link href="assets/helpbook-navibar.css" type="text/css" rel="stylesheet" media="all" />
@@ -35,26 +36,28 @@
           <p class="figure"><img src="assets/dialog.png" alt="" width="497" height="177" border="0" /></p>
           <p>If a user pushes &quot;Enable GUI Scripting&quot; button, GUIScriptingChecker try to enable &quot;GUI Scripting&quot;. If &quot;GUI Scripting&quot; is enabled through authorization process, a script can contiue to work.</p>
           <h2><a id="sample" name="sample"></a>Sample</h2>
-          <div class="sourceCode">
-            <div>
-              <span class="langKeyword">property</span> <span class="userDefine">GUIScriptingChecker</span> <span class="normal">:</span> <span class="appKeyword">module</span></div>
-            <br />
-            <div>
-              <span class="appKeyword">boot</span> <span class="normal">(</span><span class="appKeyword">module loader</span><span class="normal">)</span> <span class="appKeyword">for</span> <span class="langKeyword">me</span></div>
-            <div>
-              <span class="langKeyword">if</span> <span class="langKeyword">not</span> <span class="userDefine">do</span><span class="normal">()</span> <span class="langKeyword">of</span> <span class="userDefine">GUIScriptingChecker</span> <span class="langKeyword">then</span></div>
-            <div style="text-indent:4ex;">
-              <span class="langKeyword">return</span></div>
-            <div>
-              <span class="langKeyword">end</span> <span class="langKeyword">if</span></div>
-            <br />
-            <div>
-              <span class="normal">(*</span><span class="comment"> Scripts dpended on GUI Scripting </span><span class="normal">*)</span></div>
-            <div>
-              <span class="appKeyword">display alert</span> <span class="normal">&quot;GUI Scripting is enabled.&quot;</span></div>
-            <div class="scriptButton" >
-              <input type="button" value="sample" onclick="location.href='applescript://com.apple.scripteditor?action=new&amp;script=property%20GUIScriptingChecker%20:%20module%0D%0Dboot%20(module%20loader)%20for%20me%0Dif%20not%20do()%20of%20GUIScriptingChecker%20then%0D%09return%0Dend%20if%0D%0D(*%20Scripts%20dpended%20on%20GUI%20Scripting%20*)%0Ddisplay%20alert%20%22GUI%20Scripting%20is%20enabled.%22%0D'" /></div>
-          </div>
+          <csobj csref="../../../_Components/sample-code.html" occur="74" t="Component">
+            <div class="sourceCode">
+              <div>
+                <span class="langKeyword">property</span> <span class="userDefine">GUIScriptingChecker</span> <span class="normal">:</span> <span class="appKeyword">module</span></div>
+              <br />
+              <div>
+                <span class="appKeyword">boot</span> <span class="normal">(</span><span class="appKeyword">module loader</span><span class="normal">)</span> <span class="appKeyword">for</span> <span class="langKeyword">me</span></div>
+              <div>
+                <span class="langKeyword">if</span> <span class="langKeyword">not</span> <span class="userDefine">do</span><span class="normal">()</span> <span class="langKeyword">of</span> <span class="userDefine">GUIScriptingChecker</span> <span class="langKeyword">then</span></div>
+              <div style="text-indent:4ex;">
+                <span class="langKeyword">return</span></div>
+              <div>
+                <span class="langKeyword">end</span> <span class="langKeyword">if</span></div>
+              <br />
+              <div>
+                <span class="normal">(*</span><span class="comment"> Scripts dpended on GUI Scripting </span><span class="normal">*)</span></div>
+              <div>
+                <span class="appKeyword">display alert</span> <span class="normal">&quot;GUI Scripting is enabled.&quot;</span></div>
+              <div class="scriptButton" >
+                <input type="button" value="edit sample" onclick="location.href='applescript://com.apple.scripteditor?action=new&amp;script=property%20GUIScriptingChecker%20:%20module%0D%0Dboot%20(module%20loader)%20for%20me%0Dif%20not%20do()%20of%20GUIScriptingChecker%20then%0D%09return%0Dend%20if%0D%0D(*%20Scripts%20dpended%20on%20GUI%20Scripting%20*)%0Ddisplay%20alert%20%22GUI%20Scripting%20is%20enabled.%22%0D'" /></div>
+            </div>
+          </csobj>
           <h2><a id="localizing_messages" name="localizing_messages"></a>Localizing Messages</h2>
           <p>Messages are displayed when &quot;GUI Scripting&quot; is OFF can be localized by giving a delegate to &quot;GUIScriptingChecker&quot; as follows.</p>
           <div class="sourceCode">
@@ -117,7 +120,7 @@
         <!-- InstanceEndEditable --></div>
       <!-- InstanceBeginEditable name="prev-next-item" --><div class="prev-next-item"><a href="../02_reference/index.html"><span class="navibar-next">GUIScriptingChecker Reference</span></a></div><!-- InstanceEndEditable -->
       <div class="footer">
-        <p>This page was last built on <csobj format="MedDate" h="10" region="0" t="DateTime" w="73">Tue, Nov 12, 2013</csobj> ; <csobj format="LongTime" h="10" region="0" t="DateTime" w="45">5:11:25 PM</csobj> . Thanks for checking it out!</p>
+        <p>This page was last built on <csobj format="MedDate" h="10" region="0" t="DateTime" w="67">Thu, Oct 1, 2015</csobj> ; <csobj format="LongTime" h="10" region="0" t="DateTime" w="45">7:11:52 PM</csobj> . Thanks for checking it out!</p>
       </div>
     </body>
 
