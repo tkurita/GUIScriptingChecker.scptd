@@ -2,19 +2,40 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleVersion</key>
-	<string>1.2</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.2</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>copyright 2007-2010, Tetsuro KURITA</string>
 	<key>CFBundleGetInfoString</key>
-	<string>1.2 copyright 2007-2010, Tetsuro KURITA</string>
+	<string>1.4 Copyright 2007-2015, Tetsuro KURITA</string>
 	<key>CFBundleHelpBookFolder</key>
 	<string>GUIScriptingCheckerHelp</string>
+	<key>CFBundleHelpBookName</key>
+	<string>tkurita.GUIScriptingChecker.help</string>
 	<key>CFBundleIdentifier</key>
 	<string>Scriptfactory.GUIScriptingChecker</string>
-	<key>CFBundleHelpBookName</key>
-	<string>GUIScriptingChecker Help</string>
+	<key>CFBundleIndentifier</key>
+	<string>tkurita.GUIScriptingChecker</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.4</string>
+	<key>CFBundleVersion</key>
+	<string>1.4</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>copyright 2007-2016, Tetsuro KURITA</string>
+	<key>WindowState</key>
+	<dict>
+		<key>bundleDividerCollapsed</key>
+		<false/>
+		<key>bundlePositionOfDivider</key>
+		<real>609</real>
+		<key>dividerCollapsed</key>
+		<false/>
+		<key>eventLogLevel</key>
+		<integer>2</integer>
+		<key>name</key>
+		<string>ScriptWindowState</string>
+		<key>positionOfDivider</key>
+		<real>619</real>
+		<key>savedFrame</key>
+		<string>198 91 908 757 0 0 1440 877 </string>
+		<key>selectedTab</key>
+		<string>log</string>
+	</dict>
 </dict>
 </plist>
