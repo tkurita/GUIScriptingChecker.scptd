@@ -4,20 +4,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 	<head>
-		<title>detail_message</title>
+		<title>title_message</title>
 		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 		<link href="../assets/default.css" type="text/css" rel="stylesheet" media="all" />
 		<link href="../assets/handler_page.css" type="text/css" rel="stylesheet" media="all" />
 		<link href="../assets/applescript.css" type="text/css" rel="stylesheet" media="all" />
-		<meta name="keywords" content="detail_message, GUIScriptingChecker" />
+		<meta name="keywords" content="title_message, GUIScriptingChecker" />
 		<script type="text/javascript" src="../assets/run_helpscript.js"></script>
-		<link href="../../" id="HelpBookRoot" />
+        <link id="helpviewer-handler-helper" href="../assets-helpbook/helpviewer-handler-helper.scpt" />
+        <script type="text/javascript" src="../assets-helpbook/helpviewer-handler-enable.js"></script>
+		<link href="../" id="HelpBookRoot" />
 	</head>
 
 	<body>
 		<div id="navi-bar">
 			<div class="edit-script-link">
-			<a onclick="return runHelpScriptWithBundleRoot(this)" href="../assets/editScript.scpt">Edit Script</a>
+			<a onclick="return runHelpScriptWithBundleRoot(this)" href="../assets-helpbook/editScript.scpt">Edit Script</a>
 			</div>
 			<div class="left-contents">
 			<div class="to-root">
@@ -27,17 +29,17 @@
 		</div>
 		<div id="contents">
 		<div class="elementTitle">
-<a id="detail_message" name="detail_message">detail_message</a>
+<a id="title_message" name="title_message">title_message</a>
 </div>
 <p class="sourceCode">
-<span class="userDefine">detail_message</span><span class="normal">()</span>
-<a href="../assets/setClipboard.scpt" onclick="return runHelpScriptWithInnerText(this)">
-<img src="../assets/Clipboard24.png" alt="copy to clipboard" align="right" />
+<span class="userDefine">title_message</span><span class="normal">()</span>
+<a href="../assets-helpbook/setClipboard.scpt" onclick="return runHelpScriptWithInnerText(this)">
+<img src="../assets-helpbook/Clipboard24.png" alt="copy to clipboard" align="right" />
 </a></p>
-<p>Return a detail message for a dialog.</p>
+<p>Return a title text for a dialog.</p>
 
 
-<p>The default value is &quot;GUI scripting is not enabled.&quot;</p>
+<p>The default value is 'Would you like me to enable &quot;GUI Scripting&quot; ? (&quot;Enable access for assistive devices &quot; will be turn on in System Preferneces.)'.</p>
 <div class="subHeading">
 Result
 </div>

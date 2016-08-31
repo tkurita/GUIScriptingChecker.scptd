@@ -7,23 +7,23 @@
 	<key>CFBundleHelpBookFolder</key>
 	<string>GUIScriptingCheckerHelp</string>
 	<key>CFBundleHelpBookName</key>
-	<string>tkurita.GUIScriptingChecker.help</string>
+	<string>net.script-factory.GUIScriptingChecker.help</string>
 	<key>CFBundleIdentifier</key>
-	<string>Scriptfactory.GUIScriptingChecker</string>
-	<key>CFBundleIndentifier</key>
-	<string>tkurita.GUIScriptingChecker</string>
+	<string>net.script-factory.GUIScriptingChecker</string>
+	<key>CFBundleName</key>
+	<string>GUIScriptingChecker</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.4</string>
 	<key>CFBundleVersion</key>
 	<string>1.4</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>copyright 2007-2016, Tetsuro KURITA</string>
+	<string>Copyright 2007-2016, Tetsuro KURITA</string>
 	<key>WindowState</key>
 	<dict>
 		<key>bundleDividerCollapsed</key>
 		<false/>
 		<key>bundlePositionOfDivider</key>
-		<real>609</real>
+		<real>587</real>
 		<key>dividerCollapsed</key>
 		<false/>
 		<key>eventLogLevel</key>
@@ -33,7 +33,7 @@
 		<key>positionOfDivider</key>
 		<real>619</real>
 		<key>savedFrame</key>
-		<string>198 91 908 757 0 0 1440 877 </string>
+		<string>78 105 908 757 0 0 1440 877 </string>
 		<key>selectedTab</key>
 		<string>log</string>
 	</dict>

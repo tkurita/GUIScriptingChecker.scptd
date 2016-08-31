@@ -11,13 +11,15 @@
 		<link href="../assets/applescript.css" type="text/css" rel="stylesheet" media="all" />
 		<meta name="keywords" content="set_delegate, GUIScriptingChecker" />
 		<script type="text/javascript" src="../assets/run_helpscript.js"></script>
-		<link href="../../" id="HelpBookRoot" />
+        <link id="helpviewer-handler-helper" href="../assets-helpbook/helpviewer-handler-helper.scpt" />
+        <script type="text/javascript" src="../assets-helpbook/helpviewer-handler-enable.js"></script>
+		<link href="../" id="HelpBookRoot" />
 	</head>
 
 	<body>
 		<div id="navi-bar">
 			<div class="edit-script-link">
-			<a onclick="return runHelpScriptWithBundleRoot(this)" href="../assets/editScript.scpt">Edit Script</a>
+			<a onclick="return runHelpScriptWithBundleRoot(this)" href="../assets-helpbook/editScript.scpt">Edit Script</a>
 			</div>
 			<div class="left-contents">
 			<div class="to-root">
@@ -31,8 +33,8 @@
 </div>
 <p class="sourceCode">
 <span class="userDefine">set_delegate</span><span class="normal">(</span><span class="userDefine">a_delegate</span><span class="normal">)</span>
-<a href="../assets/setClipboard.scpt" onclick="return runHelpScriptWithInnerText(this)">
-<img src="../assets/Clipboard24.png" alt="copy to clipboard" align="right" />
+<a href="../assets-helpbook/setClipboard.scpt" onclick="return runHelpScriptWithInnerText(this)">
+<img src="../assets-helpbook/Clipboard24.png" alt="copy to clipboard" align="right" />
 </a></p>
 <p>set a delegate script</p>
 

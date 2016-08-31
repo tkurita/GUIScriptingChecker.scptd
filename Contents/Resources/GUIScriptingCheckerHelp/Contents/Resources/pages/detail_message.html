@@ -4,20 +4,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 	<head>
-		<title>do</title>
+		<title>detail_message</title>
 		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 		<link href="../assets/default.css" type="text/css" rel="stylesheet" media="all" />
 		<link href="../assets/handler_page.css" type="text/css" rel="stylesheet" media="all" />
 		<link href="../assets/applescript.css" type="text/css" rel="stylesheet" media="all" />
-		<meta name="keywords" content="do, GUIScriptingChecker" />
+		<meta name="keywords" content="detail_message, GUIScriptingChecker" />
 		<script type="text/javascript" src="../assets/run_helpscript.js"></script>
-		<link href="../../" id="HelpBookRoot" />
+        <link id="helpviewer-handler-helper" href="../assets-helpbook/helpviewer-handler-helper.scpt" />
+        <script type="text/javascript" src="../assets-helpbook/helpviewer-handler-enable.js"></script>
+		<link href="../" id="HelpBookRoot" />
 	</head>
 
 	<body>
 		<div id="navi-bar">
 			<div class="edit-script-link">
-			<a onclick="return runHelpScriptWithBundleRoot(this)" href="../assets/editScript.scpt">Edit Script</a>
+			<a onclick="return runHelpScriptWithBundleRoot(this)" href="../assets-helpbook/editScript.scpt">Edit Script</a>
 			</div>
 			<div class="left-contents">
 			<div class="to-root">
@@ -27,21 +29,21 @@
 		</div>
 		<div id="contents">
 		<div class="elementTitle">
-<a id="do" name="do">do</a>
+<a id="detail_message" name="detail_message">detail_message</a>
 </div>
 <p class="sourceCode">
-<span class="userDefine">do</span><span class="normal">()</span>
-<a href="../assets/setClipboard.scpt" onclick="return runHelpScriptWithInnerText(this)">
-<img src="../assets/Clipboard24.png" alt="copy to clipboard" align="right" />
+<span class="userDefine">detail_message</span><span class="normal">()</span>
+<a href="../assets-helpbook/setClipboard.scpt" onclick="return runHelpScriptWithInnerText(this)">
+<img src="../assets-helpbook/Clipboard24.png" alt="copy to clipboard" align="right" />
 </a></p>
-<p>Check availability of "GUI Scripting"</p>
+<p>Return a detail message for a dialog.</p>
 
 
-<p>If &quot;GUI Scripting&quot; is enabled, ture is returned. If &quot;GUI Scripting&quot; is not enabled, the dialog to ask to enable &quot;GUI Scripting&quot;. If enabling &quot;GUI Scripting&quot; is cancled,  false is returnd.</p>
+<p>The default value is &quot;GUI scripting is not enabled.&quot;</p>
 <div class="subHeading">
 Result
 </div>
-<p>boolean : If true, GUI scripting is enabled.</p>
+<p>text</p>
 		</div>
 	</body>
 

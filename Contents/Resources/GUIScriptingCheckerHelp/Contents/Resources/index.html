@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>GUIScriptingChecker Reference</title>
+		<meta name="AppleTitle" content="GUIScriptingChecker Reference" />
+
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<link href="assets/default.css" type="text/css" rel="stylesheet" media="all" />
+        <link href="assets/applescript.css" type="text/css" rel="stylesheet" media="all" />
+		<meta name="keywords" content="GUIScriptingChecker, AppleScript" />
+		<script type="text/javascript" src="assets-helpbook/run_helpscript.js"></script>
+		<script type="text/javascript" src="assets/navibar-jump.js"></script>
+        <link id="helpviewer-handler-helper" href="assets-helpbook/helpviewer-handler-helper.scpt" />
+        <script type="text/javascript" src="assets-helpbook/helpviewer-handler-enable.js"></script>
+        <link href="./" id="HelpBookRoot" />
+	</head>
+
+	<body>
+		<div id="navi-bar">
+			<div class="edit-script-link">
+				<a onclick="return runHelpScriptWithBundleRoot(this)" href="assets-helpbook/editScript.scpt">Edit Script</a>
+			</div>
+			<div class="left-contents">
+			<div class="to-root">
+				<!-- InstanceBeginEditable name="to-root" --><!-- InstanceEndEditable -->
+			</div>
+			<select onchange="navibarJump(this)">
+<option value="">
+§
+</option>
+<option value="#BasicUsage">
+Basic Usage
+</option>
+<option value="#LocalizingMessages">
+Localizing Messages
+</option>
+<option value="#Basic_Methods">
+Basic Methods
+</option>
+<option value="#make">
+- make
+</option>
+<option value="#do">
+- do
+</option>
+<option value="#set_delegate">
+- set_delegate
+</option>
+<option value="#localize_messages">
+- localize_messages
+</option>
+<option value="#Delegate_Methods_">
+Delegate Methods 
+</option>
+<option value="#ok_button">
+- ok_button
+</option>
+<option value="#cancel_button">
+- cancel_button
+</option>
+<option value="#title_message">
+- title_message
+</option>
+<option value="#detail_message">
+- detail_message
+</option>
+</select>
+			</div>
+		</div>
+		<!-- InstanceBeginEditable name="prev-next-item" --><!-- InstanceEndEditable -->
+		<div id="contents">
+		<h1>GUIScriptingChecker Reference</h1>
+<ul>
+<li>Version : 1.4</li>
+<li>Author : Tetsuro KURITA <a href="mailto:scriptfactory@mac.com">scriptfactory@mac.com</a></li>
+<li>Requirements : Mac OS X 10.5 or later</li>
+<li><a href="http://www.script-factory.net/XModules/GUIScriptingChecker/en/index.html">Home page</a> || <a href="http://www.script-factory.net/XModules/GUIScriptingChecker/changelog.html">ChangeLog</a> || <a href="https://github.com/tkurita/GUIScriptingChecker.scptd">Repository</a> </li>
+</ul>
+<p>GUIScriptingChecker is an AppleScript module to check availability of "GUI Scripting". Also if "GUI Scripting" is not enabled, GUIScriptingChecker can enable "GUI Scripting" with displaying proper messages.</p>
+<p>The default statsu is "GUI Scripting" is OFF. Therefore you should check availability of "GUI Scriting" at the beginning of the script which depends on "GUI Scripting".</p>
+<p>"GUIScriptingChecker" take on boring routine task, and display the following dialog if "GUI Scripting" is not enabled.</p>
+<p><p style="text-align:center"><img src="images/dialog.png" alt="" width="497" height="177" border="0" /></p></p>
+<p>If a user pushes "Enable GUI Scripting" button, GUIScriptingChecker try to enable "GUI Scripting". If "GUI Scripting" is enabled through authorization process, a script can contiue to work.</p>
+<h2 id="BasicUsage">Basic Usage</h2>
+<div class="sourceCode">
+<div class="scriptButton">
+    <input type="button" value="Open this script" onclick="document.location = this.src" src="applescript://com.apple.scripteditor?action=new&amp;script=use%20scripting%20additions%0Duse%20GUIScriptingChecker%20:%20script%20%22GUIScriptingChecker%22%0D%0Dif%20not%20GUIScriptingChecker%27s%20do()%20then%0D%09return%0Dend%20if%0D%0D--%20Scripts%20dpended%20on%20GUI%20Scripting%20--%0D%0Ddisplay%20alert%20%22GUI%20Scripting%20is%20enabled.%22" />
+</div><div>
+<span class="langKeyword">use</span> <span class="className">scripting additions</span>
+</div>
+<div>
+<span class="langKeyword">use</span> <span class="userDefine">GUIScriptingChecker</span><span class="normal"> : </span><span class="className">script</span><span class="normal"> &quot;GUIScriptingChecker&quot;</span>
+</div>
+<br />
+<div>
+<span class="langKeyword">if</span> <span class="langKeyword">not</span> <span class="userDefine">GUIScriptingChecker's</span> <span class="userDefine">do</span><span class="normal">() </span><span class="langKeyword">then</span>
+</div>
+<div style="text-indent:4ex;">
+<span class="langKeyword">return</span>
+</div>
+<div>
+<span class="langKeyword">end</span> <span class="langKeyword">if</span>
+</div>
+<br />
+<div>
+<span class="comment">-- Scripts dpended on GUI Scripting --</span>
+</div>
+<br />
+<div>
+<span class="additionCommandName">display alert</span><span class="normal"> &quot;GUI Scripting is enabled.&quot;</span>
+</div>
+</div>
+<h2 id="LocalizingMessages">Localizing Messages</h2>
+<p>Messages are displayed when "GUI Scripting" is OFF can be localized by giving a delegate to "GUIScriptingChecker" as follows.</p>
+<div class="sourceCode">
+<div class="scriptButton">
+    <input type="button" value="Open this script" onclick="document.location = this.src" src="applescript://com.apple.scripteditor?action=new&amp;script=use%20scripting%20additions%0Duse%20GUIScriptingChecker%20:%20script%20%22GUIScriptingChecker%22%0D%0Dscript%20JapaneseLocalizer%0D%09on%20ok_button()%0D%09%09return%20%22%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A%E3%82%92%E9%96%8B%E3%81%8F%22%0D%09end%20ok_button%0D%09%0D%09on%20cancel_button()%0D%09%09return%20%22%E6%8B%92%E5%90%A6%22%0D%09end%20cancel_button%0D%09%0D%09on%20title_message()%0D%09%09return%20quoted%20form%20of%20(get%20name%20of%20current%20application)%20%26%20%22%20%E3%81%AF%E3%80%81%E3%82%A2%E3%82%AF%E3%82%BB%E3%83%83%E3%82%B7%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3%E6%A9%9F%E8%83%BD%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%81%93%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%81%AE%E5%88%B6%E5%BE%A1%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%82%92%E6%B1%82%E3%82%81%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%22%0D%09end%20title_message%0D%09%0D%09on%20detail_message()%0D%09%09return%20%22%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A%E3%81%AE%E3%80%8C%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%83%BC%E3%81%A8%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%80%8D%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A%E3%81%A7%E3%80%81%E3%81%93%E3%81%AE%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%B8%E3%81%AE%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%82%92%E8%A8%B1%E5%8F%AF%E3%81%97%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%22%0D%09end%20detail_message%0Dend%20script%0D%09%0Dtell%20GUIScriptingChecker%27s%20set_delegate(JapaneseLocalizer)%0D%09if%20not%20do()%20then%20return%0Dend%20tell%0D%0D--%20Scripts%20dpended%20on%20GUI%20Scripting%20--%0D%0Ddisplay%20alert%20%22GUI%20Scripting%20is%20enabled.%22" />
+</div><div>
+<span class="langKeyword">use</span> <span class="className">scripting additions</span>
+</div>
+<div>
+<span class="langKeyword">use</span> <span class="userDefine">GUIScriptingChecker</span><span class="normal"> : </span><span class="className">script</span><span class="normal"> &quot;GUIScriptingChecker&quot;</span>
+</div>
+<br />
+<div>
+<span class="langKeyword">script</span> <span class="userDefine">JapaneseLocalizer</span>
+</div>
+<div style="text-indent:4ex;">
+<span class="langKeyword">on</span> <span class="userDefine">ok_button</span><span class="normal">()</span>
+</div>
+<div style="text-indent:8ex;">
+<span class="langKeyword">return</span><span class="normal"> &quot;システム環境設定を開く&quot;</span>
+</div>
+<div style="text-indent:4ex;">
+<span class="langKeyword">end</span> <span class="userDefine">ok_button</span>
+</div>
+<br />
+<div style="text-indent:4ex;">
+<span class="langKeyword">on</span> <span class="userDefine">cancel_button</span><span class="normal">()</span>
+</div>
+<div style="text-indent:8ex;">
+<span class="langKeyword">return</span><span class="normal"> &quot;拒否&quot;</span>
+</div>
+<div style="text-indent:4ex;">
+<span class="langKeyword">end</span> <span class="userDefine">cancel_button</span>
+</div>
+<br />
+<div style="text-indent:4ex;">
+<span class="langKeyword">on</span> <span class="userDefine">title_message</span><span class="normal">()</span>
+</div>
+<div style="text-indent:8ex;">
+<span class="langKeyword">return</span> <span class="propertyName">quoted form</span> <span class="langKeyword">of</span><span class="normal"> (</span><span class="langKeyword">get</span> <span class="propertyName">name</span> <span class="langKeyword">of</span> <span class="enumeratedValues">current application</span><span class="normal">) &amp; &quot; は、アクセッシビリティ機能を使用してこのコンピュータの制御することを求めています。&quot;</span>
+</div>
+<div style="text-indent:4ex;">
+<span class="langKeyword">end</span> <span class="userDefine">title_message</span>
+</div>
+<br />
+<div style="text-indent:4ex;">
+<span class="langKeyword">on</span> <span class="userDefine">detail_message</span><span class="normal">()</span>
+</div>
+<div style="text-indent:8ex;">
+<span class="langKeyword">return</span><span class="normal"> &quot;システム環境設定の「セキュリティーとプライバシー」環境設定で、このアプリケーションへのアクセスを許可してください。&quot;</span>
+</div>
+<div style="text-indent:4ex;">
+<span class="langKeyword">end</span> <span class="userDefine">detail_message</span>
+</div>
+<div>
+<span class="langKeyword">end</span> <span class="langKeyword">script</span>
+</div>
+<br />
+<div>
+<span class="langKeyword">tell</span> <span class="userDefine">GUIScriptingChecker's</span> <span class="userDefine">set_delegate</span><span class="normal">(</span><span class="userDefine">JapaneseLocalizer</span><span class="normal">)</span>
+</div>
+<div style="text-indent:4ex;">
+<span class="langKeyword">if</span> <span class="langKeyword">not</span> <span class="userDefine">do</span><span class="normal">() </span><span class="langKeyword">then</span> <span class="langKeyword">return</span>
+</div>
+<div>
+<span class="langKeyword">end</span> <span class="langKeyword">tell</span>
+</div>
+<br />
+<div>
+<span class="comment">-- Scripts dpended on GUI Scripting --</span>
+</div>
+<br />
+<div>
+<span class="additionCommandName">display alert</span><span class="normal"> &quot;GUI Scripting is enabled.&quot;</span>
+</div>
+</div>
+<p><p style="text-align:center"><img src="images/localized_dialog.png" alt="" width="504" height="179" border="0" /></p></p>
+<h2 id="Basic_Methods">Basic Methods</h2>
+<h3 id="make"><a href="pages/make.html">make</a></h3>
+<p>Make a copy of an instance of GUIScriptingChcker</p>
+<h3 id="do"><a href="pages/do.html">do</a></h3>
+<p>Check availability of "GUI Scripting"</p>
+<h3 id="set_delegate"><a href="pages/set_delegate.html">set_delegate</a></h3>
+<p>set a delegate script</p>
+<h3 id="localize_messages"><a href="pages/localize_messages.html">localize_messages</a></h3>
+<p>Obtain message texts from "Localizable.strings" in the resource folder in the current bundle.</p>
+<h2 id="Delegate_Methods_">Delegate Methods </h2>
+<p>A delegate script is used for localizing messages in a dialog shown when GUI Scripting is disabled.</p>
+<h3 id="ok_button"><a href="pages/ok_button.html">ok_button</a></h3>
+<p>Return a label text for &quot;OK&quot; button.</p>
+<h3 id="cancel_button"><a href="pages/cancel_button.html">cancel_button</a></h3>
+<p>Return a label text for &quot;Cancel&quot; button.</p>
+<h3 id="title_message"><a href="pages/title_message.html">title_message</a></h3>
+<p>Return a title text for a dialog.</p>
+<h3 id="detail_message"><a href="pages/detail_message.html">detail_message</a></h3>
+<p>Return a detail message for a dialog.</p>
+		</div>
+		<!-- InstanceBeginEditable name="prev-next-item" --><!-- InstanceEndEditable -->
+	</body>
+
+</html>
