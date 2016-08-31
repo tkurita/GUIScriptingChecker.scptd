@@ -79,11 +79,15 @@ Delegate Methods
 <li>Requirements : Mac OS X 10.5 or later</li>
 <li><a href="http://www.script-factory.net/XModules/GUIScriptingChecker/en/index.html">Home page</a> || <a href="http://www.script-factory.net/XModules/GUIScriptingChecker/changelog.html">ChangeLog</a> || <a href="https://github.com/tkurita/GUIScriptingChecker.scptd">Repository</a> </li>
 </ul>
-<p>GUIScriptingChecker is an AppleScript module to check availability of "GUI Scripting". Also if "GUI Scripting" is not enabled, GUIScriptingChecker can enable "GUI Scripting" with displaying proper messages.</p>
-<p>The default statsu is "GUI Scripting" is OFF. Therefore you should check availability of "GUI Scriting" at the beginning of the script which depends on "GUI Scripting".</p>
-<p>"GUIScriptingChecker" take on boring routine task, and display the following dialog if "GUI Scripting" is not enabled.</p>
-<p><p style="text-align:center"><img src="images/dialog.png" alt="" width="497" height="177" border="0" /></p></p>
-<p>If a user pushes "Enable GUI Scripting" button, GUIScriptingChecker try to enable "GUI Scripting". If "GUI Scripting" is enabled through authorization process, a script can contiue to work.</p>
+<p>GUIScriptingChecker is an AppleScript library to check availability of "GUI Scripting". Also if "GUI Scripting" is not enabled, GUIScriptingChecker can guide a user to enable &quot;GUI Scripting&quot; with displaying proper messages.</p>
+<p>The default status of "GUI Scripting" is OFF. Therefore you should check availability of "GUI Scriting" at the beginning of the script which depends on "GUI Scripting".</p>
+<p>"GUIScriptingChecker" take on boring routine task, and display dialogs to guide users if "GUI Scripting" is not enabled.</p>
+<p>In OS X 10.9 or later, the following dialog will be displayed. </p>
+<p><img src="images/dialog-elcapitan@2x.png" width="532" height="271" /></p>
+<p>Clicking "Open System Preferences" will openthe Accessibility section in the Security & Privacy preference pane in System Preferences.</p>
+<p>In OS X 10.8 or before, the following dialog will be displayed.</p>
+<p><img src="images/dialog.png" alt="" width="497" height="177" border="0" /></p>
+<p>If a user pushes "Enable GUI Scripting" button, "GUIScriptingChecker" try to enable "GUI Scripting". If "GUI Scripting" is enabled through authorization process, the script can contiue to work.</p>
 <h2 id="BasicUsage">Basic Usage</h2>
 <div class="sourceCode">
 <div class="scriptButton">
@@ -189,7 +193,7 @@ Delegate Methods
 <span class="additionCommandName">display alert</span><span class="normal"> &quot;GUI Scripting is enabled.&quot;</span>
 </div>
 </div>
-<p><p style="text-align:center"><img src="images/localized_dialog.png" alt="" width="504" height="179" border="0" /></p></p>
+<p><img src="images/localized-dialog-elcapitan@2x.png" width="532" height="302" /></p>
 <h2 id="Basic_Methods">Basic Methods</h2>
 <h3 id="make"><a href="pages/make.html">make</a></h3>
 <p>Make a copy of an instance of GUIScriptingChcker</p>
