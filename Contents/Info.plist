@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleGetInfoString</key>
-	<string>1.4 Copyright 2007-2015, Tetsuro KURITA</string>
+	<string>1.4 Copyright 2007-2016, Tetsuro KURITA</string>
 	<key>CFBundleHelpBookFolder</key>
 	<string>GUIScriptingCheckerHelp</string>
 	<key>CFBundleHelpBookName</key>
@@ -33,7 +33,7 @@
 		<key>positionOfDivider</key>
 		<real>619</real>
 		<key>savedFrame</key>
-		<string>18 120 908 757 0 0 1440 877 </string>
+		<string>295 117 908 757 0 0 1440 877 </string>
 		<key>selectedTab</key>
 		<string>log</string>
 	</dict>
