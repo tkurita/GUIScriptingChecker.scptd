@@ -26,6 +26,8 @@
 	<string>GUIScriptingChecker</string>
 	<key>HPDBookTitle</key>
 	<string>GUIScriptingChecker Reference</string>
+	<key>HPDBookIconPath</key>
+	<string>AppleScript32@2x.png</string>
 	<key>HPDBookType</key>
 	<string>3</string>
 </dict>
