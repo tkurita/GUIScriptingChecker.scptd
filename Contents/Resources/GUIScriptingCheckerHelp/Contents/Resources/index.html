@@ -52,7 +52,7 @@ Basic Methods
 <option value="#localize_messages">
 - localize_messages
 </option>
-<option value="#Delegate_Methods_">
+<option value="#Delegate_Methods">
 Delegate Methods 
 </option>
 <option value="#ok_button">
@@ -79,12 +79,12 @@ Delegate Methods
 <li>Requirements : Mac OS X 10.5 or later</li>
 <li><a href="http://www.script-factory.net/XModules/GUIScriptingChecker/en/index.html">Home page</a> || <a href="http://www.script-factory.net/XModules/GUIScriptingChecker/changelog.html">ChangeLog</a> || <a href="https://github.com/tkurita/GUIScriptingChecker.scptd">Repository</a> </li>
 </ul>
-<p>GUIScriptingChecker is an AppleScript library to check availability of "GUI Scripting". Also if "GUI Scripting" is not enabled, GUIScriptingChecker can guide a user to enable &quot;GUI Scripting&quot; with displaying proper messages.</p>
-<p>The default status of "GUI Scripting" is OFF. Therefore you should check availability of "GUI Scriting" at the beginning of the script which depends on "GUI Scripting".</p>
-<p>"GUIScriptingChecker" take on boring routine task, and display dialogs to guide users if "GUI Scripting" is not enabled.</p>
-<p>In OS X 10.9 or later, the following dialog will be displayed. </p>
+<p>GUIScriptingChecker is an AppleScript library to check availability of "GUI Scripting". Also if "GUI Scripting" is not enabled, GUIScriptingChecker can guide a user to enable "GUI Scripting" with displaying proper messages.</p>
+<p>The default status of "GUI Scripting" is OFF. Therefore availability of "GUI Scripting" should be confirmed at the beginning of the script and a proper guide should be provided if needed.</p>
+<p>The GUIScriptingChecker can help to perform such boring routine task with minimum efforts.</p>
+<p>In OS X 10.9 or later, the following dialog will be displayed when "GUI Scripting" is OFF.</p>
 <p><img src="images/dialog-elcapitan@2x.png" width="532" height="271" /></p>
-<p>Clicking "Open System Preferences" will openthe Accessibility section in the Security & Privacy preference pane in System Preferences.</p>
+<p>Clicking "Open System Preferences" will open the Accessibility section in the Security & Privacy preference pane in System Preferences.</p>
 <p>In OS X 10.8 or before, the following dialog will be displayed.</p>
 <p><img src="images/dialog.png" alt="" width="497" height="177" border="0" /></p>
 <p>If a user pushes "Enable GUI Scripting" button, "GUIScriptingChecker" try to enable "GUI Scripting". If "GUI Scripting" is enabled through authorization process, the script can contiue to work.</p>
@@ -203,7 +203,7 @@ Delegate Methods
 <p>set a delegate script</p>
 <h3 id="localize_messages"><a href="pages/localize_messages.html">localize_messages</a></h3>
 <p>Obtain message texts from "Localizable.strings" in the resource folder in the current bundle.</p>
-<h2 id="Delegate_Methods_">Delegate Methods </h2>
+<h2 id="Delegate_Methods">Delegate Methods </h2>
 <p>A delegate script is used for localizing messages in a dialog shown when GUI Scripting is disabled.</p>
 <h3 id="ok_button"><a href="pages/ok_button.html">ok_button</a></h3>
 <p>Return a label text for &quot;OK&quot; button.</p>
