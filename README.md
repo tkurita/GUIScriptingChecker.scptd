@@ -11,15 +11,13 @@ Japanese :
 ## Building
 Reqirements :
 * OS X 10.9 or later.
-* [ModuleLoader] (OS X 10.8 or before)
-* [HelpBook.osax]
+* [OpenHelpBook.scotd]
 
-[ModuleLoader]: http://www.script-factory.net/software/OSAX/ModuleLoader/en/index.html
-[HelpBook.osax]: http://www.script-factory.net/software/OSAX/HelpBook-osax/en/index.html
+[OpenHelpBook.scptd]: https://www.script-factory.net/XModules/OpenHelpBook/en/index.html
 
 ## Licence
 
-Copyright &copy; 2007-2018 Tetsuro Kurita
+Copyright &copy; 2007-2020 Kurita Tetsuro
 Licensed under the [GPL license][GPL].
  
 [GPL]: http://www.gnu.org/licenses/gpl.html
